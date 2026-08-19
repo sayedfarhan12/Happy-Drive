@@ -1,0 +1,161 @@
+.class public final Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;
+.super Ld8/a;
+.source "SourceFile"
+
+
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field private final zba:Ljava/lang/String;
+
+.field private final zbb:Landroid/graphics/Rect;
+
+.field private final zbc:Ljava/util/List;
+
+.field private final zbd:Ljava/lang/String;
+
+.field private final zbe:Ljava/util/List;
+
+.field private final zbf:F
+
+.field private final zbg:F
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboj;
+
+    invoke-direct {v0}, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboj;-><init>()V
+
+    sput-object v0, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Landroid/graphics/Rect;Ljava/util/List;Ljava/lang/String;Ljava/util/List;FF)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;->zba:Ljava/lang/String;
+
+    iput-object p2, p0, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;->zbb:Landroid/graphics/Rect;
+
+    iput-object p3, p0, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;->zbc:Ljava/util/List;
+
+    iput-object p4, p0, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;->zbd:Ljava/lang/String;
+
+    iput-object p5, p0, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;->zbe:Ljava/util/List;
+
+    iput p6, p0, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;->zbf:F
+
+    iput p7, p0, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;->zbg:F
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 3
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;->zba:Ljava/lang/String;
+
+    const/16 v1, 0x4f45
+
+    invoke-static {v1, p1}, Lt7/e;->z(ILandroid/os/Parcel;)I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    invoke-static {p1, v2, v0}, Lt7/e;->t(Landroid/os/Parcel;ILjava/lang/String;)V
+
+    const/4 v0, 0x2
+
+    iget-object v2, p0, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;->zbb:Landroid/graphics/Rect;
+
+    invoke-static {p1, v0, v2, p2}, Lt7/e;->s(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
+
+    const/4 p2, 0x3
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;->zbc:Ljava/util/List;
+
+    invoke-static {p1, p2, v0}, Lt7/e;->v(Landroid/os/Parcel;ILjava/util/List;)V
+
+    iget-object p2, p0, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;->zbd:Ljava/lang/String;
+
+    const/4 v0, 0x4
+
+    invoke-static {p1, v0, p2}, Lt7/e;->t(Landroid/os/Parcel;ILjava/lang/String;)V
+
+    const/4 p2, 0x5
+
+    iget-object v2, p0, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;->zbe:Ljava/util/List;
+
+    invoke-static {p1, p2, v2}, Lt7/e;->v(Landroid/os/Parcel;ILjava/util/List;)V
+
+    iget p2, p0, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;->zbf:F
+
+    const/4 v2, 0x6
+
+    invoke-static {p1, v2, v0}, Lt7/e;->B(Landroid/os/Parcel;II)V
+
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
+
+    iget p2, p0, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;->zbg:F
+
+    const/4 v2, 0x7
+
+    invoke-static {p1, v2, v0}, Lt7/e;->B(Landroid/os/Parcel;II)V
+
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
+
+    invoke-static {v1, p1}, Lt7/e;->A(ILandroid/os/Parcel;)V
+
+    return-void
+.end method
+
+.method public final zba()Landroid/graphics/Rect;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;->zbb:Landroid/graphics/Rect;
+
+    return-object v0
+.end method
+
+.method public final zbb()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;->zbd:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final zbc()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;->zba:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final zbd()Ljava/util/List;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/mlkit_vision_text_bundled_common/zboi;->zbc:Ljava/util/List;
+
+    return-object v0
+.end method

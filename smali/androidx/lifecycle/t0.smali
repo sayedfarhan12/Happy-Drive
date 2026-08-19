@@ -1,0 +1,224 @@
+.class public final Landroidx/lifecycle/t0;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/app/Application$ActivityLifecycleCallbacks;
+
+
+# static fields
+.field public static final Companion:Landroidx/lifecycle/s0;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Landroidx/lifecycle/s0;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Landroidx/lifecycle/t0;->Companion:Landroidx/lifecycle/s0;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static final registerIn(Landroid/app/Activity;)V
+    .locals 1
+
+    sget-object v0, Landroidx/lifecycle/t0;->Companion:Landroidx/lifecycle/s0;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const-string v0, "activity"
+
+    invoke-static {p0, v0}, Lb8/b0;->K(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Landroidx/lifecycle/t0;
+
+    invoke-direct {v0}, Landroidx/lifecycle/t0;-><init>()V
+
+    invoke-static {p0, v0}, La/u;->i(Landroid/app/Activity;Landroidx/lifecycle/t0;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
+    .locals 0
+
+    const-string p2, "activity"
+
+    invoke-static {p1, p2}, Lb8/b0;->K(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onActivityDestroyed(Landroid/app/Activity;)V
+    .locals 1
+
+    const-string v0, "activity"
+
+    invoke-static {p1, v0}, Lb8/b0;->K(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onActivityPaused(Landroid/app/Activity;)V
+    .locals 1
+
+    const-string v0, "activity"
+
+    invoke-static {p1, v0}, Lb8/b0;->K(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onActivityPostCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
+    .locals 0
+
+    const-string p2, "activity"
+
+    invoke-static {p1, p2}, Lb8/b0;->K(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget p2, Landroidx/lifecycle/u0;->l:I
+
+    sget-object p2, Landroidx/lifecycle/p;->ON_CREATE:Landroidx/lifecycle/p;
+
+    invoke-static {p1, p2}, Ln3/a;->d(Landroid/app/Activity;Landroidx/lifecycle/p;)V
+
+    return-void
+.end method
+
+.method public onActivityPostResumed(Landroid/app/Activity;)V
+    .locals 1
+
+    const-string v0, "activity"
+
+    invoke-static {p1, v0}, Lb8/b0;->K(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget v0, Landroidx/lifecycle/u0;->l:I
+
+    sget-object v0, Landroidx/lifecycle/p;->ON_RESUME:Landroidx/lifecycle/p;
+
+    invoke-static {p1, v0}, Ln3/a;->d(Landroid/app/Activity;Landroidx/lifecycle/p;)V
+
+    return-void
+.end method
+
+.method public onActivityPostStarted(Landroid/app/Activity;)V
+    .locals 1
+
+    const-string v0, "activity"
+
+    invoke-static {p1, v0}, Lb8/b0;->K(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget v0, Landroidx/lifecycle/u0;->l:I
+
+    sget-object v0, Landroidx/lifecycle/p;->ON_START:Landroidx/lifecycle/p;
+
+    invoke-static {p1, v0}, Ln3/a;->d(Landroid/app/Activity;Landroidx/lifecycle/p;)V
+
+    return-void
+.end method
+
+.method public onActivityPreDestroyed(Landroid/app/Activity;)V
+    .locals 1
+
+    const-string v0, "activity"
+
+    invoke-static {p1, v0}, Lb8/b0;->K(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget v0, Landroidx/lifecycle/u0;->l:I
+
+    sget-object v0, Landroidx/lifecycle/p;->ON_DESTROY:Landroidx/lifecycle/p;
+
+    invoke-static {p1, v0}, Ln3/a;->d(Landroid/app/Activity;Landroidx/lifecycle/p;)V
+
+    return-void
+.end method
+
+.method public onActivityPrePaused(Landroid/app/Activity;)V
+    .locals 1
+
+    const-string v0, "activity"
+
+    invoke-static {p1, v0}, Lb8/b0;->K(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget v0, Landroidx/lifecycle/u0;->l:I
+
+    sget-object v0, Landroidx/lifecycle/p;->ON_PAUSE:Landroidx/lifecycle/p;
+
+    invoke-static {p1, v0}, Ln3/a;->d(Landroid/app/Activity;Landroidx/lifecycle/p;)V
+
+    return-void
+.end method
+
+.method public onActivityPreStopped(Landroid/app/Activity;)V
+    .locals 1
+
+    const-string v0, "activity"
+
+    invoke-static {p1, v0}, Lb8/b0;->K(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget v0, Landroidx/lifecycle/u0;->l:I
+
+    sget-object v0, Landroidx/lifecycle/p;->ON_STOP:Landroidx/lifecycle/p;
+
+    invoke-static {p1, v0}, Ln3/a;->d(Landroid/app/Activity;Landroidx/lifecycle/p;)V
+
+    return-void
+.end method
+
+.method public onActivityResumed(Landroid/app/Activity;)V
+    .locals 1
+
+    const-string v0, "activity"
+
+    invoke-static {p1, v0}, Lb8/b0;->K(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onActivitySaveInstanceState(Landroid/app/Activity;Landroid/os/Bundle;)V
+    .locals 1
+
+    const-string v0, "activity"
+
+    invoke-static {p1, v0}, Lb8/b0;->K(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p1, "bundle"
+
+    invoke-static {p2, p1}, Lb8/b0;->K(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onActivityStarted(Landroid/app/Activity;)V
+    .locals 1
+
+    const-string v0, "activity"
+
+    invoke-static {p1, v0}, Lb8/b0;->K(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onActivityStopped(Landroid/app/Activity;)V
+    .locals 1
+
+    const-string v0, "activity"
+
+    invoke-static {p1, v0}, Lb8/b0;->K(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method

@@ -1,0 +1,576 @@
+.class public final Li0/p8;
+.super Lcb/j;
+.source "SourceFile"
+
+# interfaces
+.implements Lbb/f;
+
+
+# instance fields
+.field public final synthetic k:I
+
+.field public final synthetic l:Li0/h8;
+
+.field public final synthetic m:Z
+
+
+# direct methods
+.method public synthetic constructor <init>(Li0/h8;ZI)V
+    .locals 0
+
+    iput p3, p0, Li0/p8;->k:I
+
+    iput-object p1, p0, Li0/p8;->l:Li0/h8;
+
+    iput-boolean p2, p0, Li0/p8;->m:Z
+
+    const/4 p1, 0x3
+
+    invoke-direct {p0, p1}, Lcb/j;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Li0/l7;Lk0/m;I)V
+    .locals 8
+
+    sget-object v0, Li0/m8;->a:Li0/m8;
+
+    iget v1, p0, Li0/p8;->k:I
+
+    const/16 v2, 0x12
+
+    const/4 v3, 0x2
+
+    const/4 v4, 0x4
+
+    packed-switch v1, :pswitch_data_0
+
+    and-int/lit8 v1, p3, 0x6
+
+    if-nez v1, :cond_1
+
+    move-object v1, p2
+
+    check-cast v1, Lk0/q;
+
+    invoke-virtual {v1, p1}, Lk0/q;->g(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    move v3, v4
+
+    :cond_0
+    or-int/2addr p3, v3
+
+    :cond_1
+    and-int/lit8 v1, p3, 0x13
+
+    if-ne v1, v2, :cond_3
+
+    move-object v1, p2
+
+    check-cast v1, Lk0/q;
+
+    invoke-virtual {v1}, Lk0/q;->G()Z
+
+    move-result v2
+
+    if-nez v2, :cond_2
+
+    goto :goto_0
+
+    :cond_2
+    invoke-virtual {v1}, Lk0/q;->U()V
+
+    goto :goto_1
+
+    :cond_3
+    :goto_0
+    const/4 v2, 0x0
+
+    iget-object v3, p0, Li0/p8;->l:Li0/h8;
+
+    iget-boolean v4, p0, Li0/p8;->m:Z
+
+    and-int/lit8 p3, p3, 0xe
+
+    or-int/lit16 v6, p3, 0x6000
+
+    const/4 v7, 0x2
+
+    move-object v1, p1
+
+    move-object v5, p2
+
+    invoke-virtual/range {v0 .. v7}, Li0/m8;->b(Li0/l7;Lw0/q;Li0/h8;ZLk0/m;II)V
+
+    :goto_1
+    return-void
+
+    :pswitch_0
+    and-int/lit8 v1, p3, 0x6
+
+    if-nez v1, :cond_5
+
+    move-object v1, p2
+
+    check-cast v1, Lk0/q;
+
+    invoke-virtual {v1, p1}, Lk0/q;->g(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_4
+
+    move v3, v4
+
+    :cond_4
+    or-int/2addr p3, v3
+
+    :cond_5
+    and-int/lit8 v1, p3, 0x13
+
+    if-ne v1, v2, :cond_7
+
+    move-object v1, p2
+
+    check-cast v1, Lk0/q;
+
+    invoke-virtual {v1}, Lk0/q;->G()Z
+
+    move-result v2
+
+    if-nez v2, :cond_6
+
+    goto :goto_2
+
+    :cond_6
+    invoke-virtual {v1}, Lk0/q;->U()V
+
+    goto :goto_3
+
+    :cond_7
+    :goto_2
+    const/4 v2, 0x0
+
+    iget-object v3, p0, Li0/p8;->l:Li0/h8;
+
+    iget-boolean v4, p0, Li0/p8;->m:Z
+
+    and-int/lit8 p3, p3, 0xe
+
+    or-int/lit16 v6, p3, 0x6000
+
+    const/4 v7, 0x2
+
+    move-object v1, p1
+
+    move-object v5, p2
+
+    invoke-virtual/range {v0 .. v7}, Li0/m8;->b(Li0/l7;Lw0/q;Li0/h8;ZLk0/m;II)V
+
+    :goto_3
+    return-void
+
+    :pswitch_1
+    and-int/lit8 v1, p3, 0x6
+
+    if-nez v1, :cond_9
+
+    move-object v1, p2
+
+    check-cast v1, Lk0/q;
+
+    invoke-virtual {v1, p1}, Lk0/q;->g(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_8
+
+    move v3, v4
+
+    :cond_8
+    or-int/2addr p3, v3
+
+    :cond_9
+    and-int/lit8 v1, p3, 0x13
+
+    if-ne v1, v2, :cond_b
+
+    move-object v1, p2
+
+    check-cast v1, Lk0/q;
+
+    invoke-virtual {v1}, Lk0/q;->G()Z
+
+    move-result v2
+
+    if-nez v2, :cond_a
+
+    goto :goto_4
+
+    :cond_a
+    invoke-virtual {v1}, Lk0/q;->U()V
+
+    goto :goto_5
+
+    :cond_b
+    :goto_4
+    const/4 v2, 0x0
+
+    iget-object v3, p0, Li0/p8;->l:Li0/h8;
+
+    iget-boolean v4, p0, Li0/p8;->m:Z
+
+    and-int/lit8 p3, p3, 0xe
+
+    or-int/lit16 v6, p3, 0x6000
+
+    const/4 v7, 0x2
+
+    move-object v1, p1
+
+    move-object v5, p2
+
+    invoke-virtual/range {v0 .. v7}, Li0/m8;->b(Li0/l7;Lw0/q;Li0/h8;ZLk0/m;II)V
+
+    :goto_5
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final b(Li0/k9;Lk0/m;I)V
+    .locals 8
+
+    sget-object v0, Li0/m8;->a:Li0/m8;
+
+    iget v1, p0, Li0/p8;->k:I
+
+    const/16 v2, 0x12
+
+    const/4 v3, 0x2
+
+    const/4 v4, 0x4
+
+    packed-switch v1, :pswitch_data_0
+
+    and-int/lit8 v1, p3, 0x6
+
+    if-nez v1, :cond_1
+
+    move-object v1, p2
+
+    check-cast v1, Lk0/q;
+
+    invoke-virtual {v1, p1}, Lk0/q;->g(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    move v3, v4
+
+    :cond_0
+    or-int/2addr p3, v3
+
+    :cond_1
+    and-int/lit8 v1, p3, 0x13
+
+    if-ne v1, v2, :cond_3
+
+    move-object v1, p2
+
+    check-cast v1, Lk0/q;
+
+    invoke-virtual {v1}, Lk0/q;->G()Z
+
+    move-result v2
+
+    if-nez v2, :cond_2
+
+    goto :goto_0
+
+    :cond_2
+    invoke-virtual {v1}, Lk0/q;->U()V
+
+    goto :goto_1
+
+    :cond_3
+    :goto_0
+    const/4 v2, 0x0
+
+    iget-object v3, p0, Li0/p8;->l:Li0/h8;
+
+    iget-boolean v4, p0, Li0/p8;->m:Z
+
+    and-int/lit8 p3, p3, 0xe
+
+    or-int/lit16 v6, p3, 0x6000
+
+    const/4 v7, 0x2
+
+    move-object v1, p1
+
+    move-object v5, p2
+
+    invoke-virtual/range {v0 .. v7}, Li0/m8;->c(Li0/k9;Lw0/q;Li0/h8;ZLk0/m;II)V
+
+    :goto_1
+    return-void
+
+    :pswitch_0
+    and-int/lit8 v1, p3, 0x6
+
+    if-nez v1, :cond_5
+
+    move-object v1, p2
+
+    check-cast v1, Lk0/q;
+
+    invoke-virtual {v1, p1}, Lk0/q;->g(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_4
+
+    move v3, v4
+
+    :cond_4
+    or-int/2addr p3, v3
+
+    :cond_5
+    and-int/lit8 v1, p3, 0x13
+
+    if-ne v1, v2, :cond_7
+
+    move-object v1, p2
+
+    check-cast v1, Lk0/q;
+
+    invoke-virtual {v1}, Lk0/q;->G()Z
+
+    move-result v2
+
+    if-nez v2, :cond_6
+
+    goto :goto_2
+
+    :cond_6
+    invoke-virtual {v1}, Lk0/q;->U()V
+
+    goto :goto_3
+
+    :cond_7
+    :goto_2
+    const/4 v2, 0x0
+
+    iget-object v3, p0, Li0/p8;->l:Li0/h8;
+
+    iget-boolean v4, p0, Li0/p8;->m:Z
+
+    and-int/lit8 p3, p3, 0xe
+
+    or-int/lit16 v6, p3, 0x6000
+
+    const/4 v7, 0x2
+
+    move-object v1, p1
+
+    move-object v5, p2
+
+    invoke-virtual/range {v0 .. v7}, Li0/m8;->c(Li0/k9;Lw0/q;Li0/h8;ZLk0/m;II)V
+
+    :goto_3
+    return-void
+
+    :pswitch_1
+    and-int/lit8 v1, p3, 0x6
+
+    if-nez v1, :cond_9
+
+    move-object v1, p2
+
+    check-cast v1, Lk0/q;
+
+    invoke-virtual {v1, p1}, Lk0/q;->g(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_8
+
+    move v3, v4
+
+    :cond_8
+    or-int/2addr p3, v3
+
+    :cond_9
+    and-int/lit8 v1, p3, 0x13
+
+    if-ne v1, v2, :cond_b
+
+    move-object v1, p2
+
+    check-cast v1, Lk0/q;
+
+    invoke-virtual {v1}, Lk0/q;->G()Z
+
+    move-result v2
+
+    if-nez v2, :cond_a
+
+    goto :goto_4
+
+    :cond_a
+    invoke-virtual {v1}, Lk0/q;->U()V
+
+    goto :goto_5
+
+    :cond_b
+    :goto_4
+    const/4 v2, 0x0
+
+    iget-object v3, p0, Li0/p8;->l:Li0/h8;
+
+    iget-boolean v4, p0, Li0/p8;->m:Z
+
+    and-int/lit8 p3, p3, 0xe
+
+    or-int/lit16 v6, p3, 0x6000
+
+    const/4 v7, 0x2
+
+    move-object v1, p1
+
+    move-object v5, p2
+
+    invoke-virtual/range {v0 .. v7}, Li0/m8;->c(Li0/k9;Lw0/q;Li0/h8;ZLk0/m;II)V
+
+    :goto_5
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x3
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final bridge synthetic e(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+
+    sget-object v0, Lpa/n;->a:Lpa/n;
+
+    iget v1, p0, Li0/p8;->k:I
+
+    packed-switch v1, :pswitch_data_0
+
+    check-cast p1, Li0/k9;
+
+    check-cast p2, Lk0/m;
+
+    check-cast p3, Ljava/lang/Number;
+
+    invoke-virtual {p3}, Ljava/lang/Number;->intValue()I
+
+    move-result p3
+
+    invoke-virtual {p0, p1, p2, p3}, Li0/p8;->b(Li0/k9;Lk0/m;I)V
+
+    return-object v0
+
+    :pswitch_0
+    check-cast p1, Li0/k9;
+
+    check-cast p2, Lk0/m;
+
+    check-cast p3, Ljava/lang/Number;
+
+    invoke-virtual {p3}, Ljava/lang/Number;->intValue()I
+
+    move-result p3
+
+    invoke-virtual {p0, p1, p2, p3}, Li0/p8;->b(Li0/k9;Lk0/m;I)V
+
+    return-object v0
+
+    :pswitch_1
+    check-cast p1, Li0/k9;
+
+    check-cast p2, Lk0/m;
+
+    check-cast p3, Ljava/lang/Number;
+
+    invoke-virtual {p3}, Ljava/lang/Number;->intValue()I
+
+    move-result p3
+
+    invoke-virtual {p0, p1, p2, p3}, Li0/p8;->b(Li0/k9;Lk0/m;I)V
+
+    return-object v0
+
+    :pswitch_2
+    check-cast p1, Li0/l7;
+
+    check-cast p2, Lk0/m;
+
+    check-cast p3, Ljava/lang/Number;
+
+    invoke-virtual {p3}, Ljava/lang/Number;->intValue()I
+
+    move-result p3
+
+    invoke-virtual {p0, p1, p2, p3}, Li0/p8;->a(Li0/l7;Lk0/m;I)V
+
+    return-object v0
+
+    :pswitch_3
+    check-cast p1, Li0/l7;
+
+    check-cast p2, Lk0/m;
+
+    check-cast p3, Ljava/lang/Number;
+
+    invoke-virtual {p3}, Ljava/lang/Number;->intValue()I
+
+    move-result p3
+
+    invoke-virtual {p0, p1, p2, p3}, Li0/p8;->a(Li0/l7;Lk0/m;I)V
+
+    return-object v0
+
+    :pswitch_4
+    check-cast p1, Li0/l7;
+
+    check-cast p2, Lk0/m;
+
+    check-cast p3, Ljava/lang/Number;
+
+    invoke-virtual {p3}, Ljava/lang/Number;->intValue()I
+
+    move-result p3
+
+    invoke-virtual {p0, p1, p2, p3}, Li0/p8;->a(Li0/l7;Lk0/m;I)V
+
+    return-object v0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
